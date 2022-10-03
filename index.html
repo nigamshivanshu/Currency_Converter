@@ -4,23 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
     <title>Currency_Converter</title>
+    <style>
+        
+    </style>
     <script src="next.js"></script>
     
 </head>
 <body>
-    <form id="currency-converter">
-        <label for="from">Initial Currency</label>
-        <input type="text" name="from" id="from"/>
-        
-        <label for="to">Converted Currency</label>
-        <input type="text" name="to" id="to"/>
-        
-        <label for="amount">Amount in Initial Currency</label>
-        <input type="number" name="amount" id="amount"/>
-        <button type="submit">Convert</button>
-    </form>
+    <h1>Currency Converter</h1>
+    <div id="form">
+        <form id="currency-converter">
+            
+            <div class="input">
+                <label for="from">Initial Currency</label><br><br>
+                <input type="text" name="from" id="from"/>
+            </div>
 
-    <p class="result"></p>
+            <div class="input">
+                <label for="to">Converted Currency</label><br><br>
+                <input type="text" name="to" id="to"/><br>
+
+            </div>
+
+            <div class="input">
+                <label for="amount">Amount in Initial Currency</label><br><br>
+                <input type="number" name="amount" id="amount"/>
+
+            </div>
+            <div id="button">
+                <button type="submit">Convert</button>
+            </div>
+            
+            
+        </form>
+
+    </div>
+
+    <div id="result">
+        <p class="result"></p>
+        <label>Current Rate:-<span></span></label>
+    </div>
+
+    
 </body>
 </html>
